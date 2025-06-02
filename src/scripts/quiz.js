@@ -1,11 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const buttom = document.getElementById('button-iniciar-quiz');
+  const button = document.getElementById('button-iniciar-quiz');
   const container = document.getElementById('quiz-container');
   const listquiz = document.querySelectorAll('#quiz-container .quiz')
+  const score = document.getElementById('quiz-score');
 
-  buttom.addEventListener('click', function() {
-    buttom.style.display = "none"
-    container.style.display = "flex"
+  let acertos = 0;
+  let erros = 0;
+
+  button.addEventListener('click', function() {
+    button.style.display = "none";
+    container.style.display = "flex";
+    score.style.setProperty('visibility', 'visible');
   });
   
   listquiz.forEach(quiz => {
@@ -20,10 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (p.getAttribute("resposta") == "falso"){
           p.style.border = "2px solid red"
           verdadeiro.style.border = "2px solid green"
+          erros++;
         } else {
           p.style.border = "2px solid green"
+          acertos++;
         }
         quiz.style.pointerEvents = "none"
+        score.innerHTML = 'Você acertou '+acertos+' e errou '+erros+'.'
       })
     })
   })

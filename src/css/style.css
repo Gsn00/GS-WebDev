@@ -360,6 +360,13 @@ footer .links {
     font-size: 14px;
 }
 
+#quiz-score {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    visibility: hidden;
+}
+
 /* @media */
 
 @media (min-width: 1201px) {
