@@ -32,4 +32,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         images[currentImg].style.opacity = '1';
     }
+
+    arrowLeft.addEventListener('click', function() {
+        prevSlide();
+    });
+
+    arrowRight.addEventListener('click', function() {
+        nextSlide();
+    });
 });
