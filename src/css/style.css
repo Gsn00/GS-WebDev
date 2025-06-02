@@ -344,6 +344,7 @@ footer .links {
 
 .quiz {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #f7f5f2;
     border-radius: 10px;
     padding: 25px;
     display: flex;
