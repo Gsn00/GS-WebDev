@@ -12,4 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
     let numberOfImages = images.length - 1;
 
     images[0].style.opacity = '1';
+
+    function nextSlide() {
+        images[currentImg].style.opacity = '0';
+        if (currentImg == numberOfImages) {
+            currentImg = 0;
+        } else {
+            currentImg++;
+        }
+        images[currentImg].style.opacity = '1';
+    }
 });
