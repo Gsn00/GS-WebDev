@@ -22,4 +22,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         images[currentImg].style.opacity = '1';
     }
+
+    function prevSlide() {
+        images[currentImg].style.opacity = '0';
+        if (currentImg == 0) {
+            currentImg = numberOfImages;
+        } else {
+            currentImg--;
+        }
+        images[currentImg].style.opacity = '1';
+    }
 });
