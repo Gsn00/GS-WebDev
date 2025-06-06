@@ -14,7 +14,6 @@
         <a href="#publico" class="nav-link">Público-Alvo</a>
         <a href="#beneficios" class="nav-link">Benefícios</a>
         <a href="#impacto" class="nav-link">Impacto Diário</a>
-        <a href="src/pages/slideshow.html" class="nav-link">SlideShow</a>
         <a href="src/pages/quiz.html" class="nav-link">Quiz</a>
     </div>
     
@@ -35,7 +34,6 @@
                 <a href="#publico" class="nav-link">Público-Alvo</a>
                 <a href="#beneficios" class="nav-link">Benefícios</a>
                 <a href="#impacto" class="nav-link">Impacto Diário</a>
-                <a href="src/pages/slideshow.html" class="nav-link">SlideShow</a>
                 <a href="src/pages/quiz.html" class="nav-link">Quiz</a>
             </nav>
            
@@ -48,6 +46,34 @@
             </div>
         </div>
     </header>
+
+    <div class="section section-07 section-white" id="beneficios">
+        <div class="container">
+            <h1>Como o Atlas Funciona</h1>
+            <div class="content">
+                <p>O Atlas é uma solução integrada que combina um aplicativo mobile acessível com sistemas físicos de monitoramento para enfrentar os impactos das enchentes em comunidades vulneráveis.
+                <br><br>Por meio do app, os moradores podem enviar alertas, pedir ou oferecer ajuda, acessar informações úteis e consultar contatos de emergência. Já os sensores com Arduino monitoram o nível da água e disparam alertas visuais e sonoros quando há risco iminente, permitindo ações mais rápidas e seguras.
+                <br><br>A proposta une tecnologia digital e física de forma simples e eficaz, promovendo solidariedade, prevenção e resposta rápida em momentos críticos.</p>
+                <img id="star" src="./src/images/stars.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-08 section-blue" id ="resultados">
+        <div class="container">
+            <div class="slideshow">
+                <div class="slide-img">
+                    <img src="./src/images/slide-enchente01.jpg" alt="" id="slideshow-img-01">
+                    <img src="./src/images/slide-enchente02.jpg" alt="" id="slideshow-img-02">
+                    <img src="./src/images/slide-enchente03.jpg" alt="" id="slideshow-img-03">
+                </div>
+                <div class="slide-buttons">
+                    <img src="./src/images/arrow-left.png" alt="" id="slide-arrow-left">
+                    <img src="./src/images/arrow-right.png" alt="" id="slide-arrow-right">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="section section-01 section-white" id ="problema">
         <div class="container">
@@ -63,7 +89,10 @@
         <div class="container">
             <h1>Tecnologias Utilizadas</h1>
             <div class="content">
-                <p>Usaremos HTML, CSS e JavaScript no frontend para garantir leveza, simplicidade e compatibilidade com qualquer navegador.<br>O backend será feito em Python, com banco de dados simples para armazenar alertas, cadastros e mensagens da comunidade.</p>
+                <p>Usaremos HTML, CSS e JavaScript para o frontend do app, garantindo leveza, praticidade e boa usabilidade em celulares.
+No backend, utilizaremos Python com banco de dados simples para armazenar alertas, cadastros e mensagens da comunidade.
+<br><br>Além do digital, implementamos sensores físicos com Arduino que monitoram o nível da água em tempo real nas residências.
+Se o nível atingir um ponto crítico, o sistema emite alertas visuais e sonoros para avisar os moradores imediatamente.</p>
             </div>
         </div>
     </div>
@@ -72,7 +101,7 @@
         <div class="container">
             <h1>Objetivos que pretendemos alcançar</h1>
             <div class="content">
-                <img src="./src/images/enchente-03.jpg" alt="Prédio vermelho com nível da água na base da porta.">
+                <img src="./src/images/enchente-03.jpeg" alt="Prédio vermelho com nível da água na base da porta.">
                 <p>Facilitar a comunicação entre moradores durante enchentes e emergências, garantindo mais agilidade nas respostas e pedidos de ajuda.<br>Fortalecer o senso de comunidade, promovendo solidariedade e organização local com tecnologia acessível e de fácil uso.</p>
             </div>
         </div>
@@ -92,7 +121,7 @@
         <div class="container">
             <h1>Os benefícios oferecidos pela solução</h1>
             <div class="content">
-                <img src="./src/images/enchente-02.jpg" alt="Interior de uma casa totalmente alagada">
+                <img src="./src/images/enchente-02.webp" alt="Interior de uma casa totalmente alagada">
                 <p>Comunicação mais rápida entre vizinhos, com alertas, pedidos de ajuda e orientações úteis sempre disponíveis na palma da mão.<br>Redução de riscos, mais solidariedade entre moradores e acesso fácil a contatos e informações importantes em qualquer momento.</p>
             </div>
         </div>
@@ -119,12 +148,12 @@
                 <a href="#publico" class="nav-link">Público-Alvo</a>
                 <a href="#beneficios" class="nav-link">Benefícios</a>
                 <a href="#impacto" class="nav-link">Impacto Diário</a>
-                <a href="src/pages/slideshow.html" class="nav-link">SlideShow</a>
                 <a href="src/pages/quiz.html" class="nav-link">Quiz</a>
             </div>
         </div>
     </footer>
 
     <script src="src/scripts/scripts.js"></script>
+    <script src="src/scripts/slideshow.js"></script>
 </body>
 </html>
